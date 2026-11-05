@@ -1,0 +1,6 @@
+{
+  "appId": "com.nexora.ai",
+  "appName": "NEXORA AI",
+  "webDir": "public",
+  "bundledWebRuntime": false
+}

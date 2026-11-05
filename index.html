@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071426">
+  <meta name="description" content="Meet NEXORA, your AI assistant for questions, ideas, learning and everyday help.">
+  <title>NEXORA AI — Your ideas, answered</title>
+  <style>
+    :root { color-scheme: dark; --bg:#071426; --panel:#0d2038; --blue:#4da3ff; --cyan:#54e1df; --text:#f4f8ff; --muted:#a9bad0; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter,system-ui,Arial,sans-serif; color:var(--text); background:radial-gradient(circle at 80% 5%,#123d69 0,transparent 34%),linear-gradient(160deg,#071426,#091a30 65%,#06101e); min-height:100vh; }
+    header { max-width:1120px; margin:auto; padding:24px 6%; display:flex; align-items:center; justify-content:space-between; }
+    .brand { font-weight:800; letter-spacing:.16em; font-size:1.25rem; }
+    .brand span { color:var(--cyan); }
+    .status { color:#bcece9; font-size:.85rem; border:1px solid #28666b; border-radius:99px; padding:8px 12px; }
+    main { max-width:1120px; margin:auto; padding:72px 6% 56px; display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center; }
+    .eyebrow { color:var(--cyan); text-transform:uppercase; letter-spacing:.18em; font-size:.78rem; font-weight:700; }
+    h1 { font-size:clamp(2.8rem,7vw,5.5rem); line-height:1.02; margin:18px 0; letter-spacing:-.055em; }
+    h1 span { background:linear-gradient(90deg,var(--blue),var(--cyan)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+    .lead { color:var(--muted); font-size:1.12rem; line-height:1.8; max-width:590px; }
+    .hint { display:inline-flex; gap:10px; align-items:center; margin-top:24px; padding:13px 17px; border:1px solid #29425f; border-radius:12px; background:#0b1d33; color:#d8e7fa; }
+    .orb-wrap { display:grid; place-items:center; min-height:330px; }
+    .orb { width:min(270px,70vw); aspect-ratio:1; border-radius:50%; background:radial-gradient(circle at 35% 30%,#b4ffff 0,#54e1df 9%,#277acb 38%,#112e58 68%,#08172b 100%); box-shadow:0 0 70px #2e9bca55, inset -18px -20px 40px #030b18; position:relative; }
+    .orb:before,.orb:after { content:""; position:absolute; inset:-17px; border:1px solid #65cfff55; border-radius:50%; transform:rotateX(68deg) rotateZ(-22deg); }
+    .orb:after { inset:-35px; transform:rotateX(68deg) rotateZ(38deg); border-color:#54e1df44; }
+    section { max-width:1120px; margin:0 auto; padding:0 6% 70px; }
+    .info { background:#0b1c31cc; border:1px solid #1b3858; border-radius:20px; padding:25px; }
+    .info h2 { margin:0 0 8px; font-size:1.25rem; }
+    .info p { margin:0; color:var(--muted); line-height:1.7; }
+    footer { text-align:center; color:#7f94ad; padding:24px; border-top:1px solid #1b2d44; font-size:.85rem; }
+    @media(max-width:760px) { main { grid-template-columns:1fr; padding-top:48px; gap:18px; } .orb-wrap { min-height:250px; } .orb { width:190px; } header { padding-top:20px; } }
+  </style>
+  <script src="https://cdn.botpress.cloud/webchat/v5.0/inject.js"></script>
+  <script src="https://files.bpcontent.cloud/2026/11/05/00/20261105001839-LKVPWOC1.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="brand">NEXORA<span>.</span></div>
+    <div class="status">● AI assistant</div>
+  </header>
+  <main>
+    <div>
+      <div class="eyebrow">A smarter way to explore</div>
+      <h1>Your ideas.<br><span>Answered.</span></h1>
+      <p class="lead">Meet NEXORA, your AI assistant for questions, learning, brainstorming and everyday problem-solving. Open the chat and start a conversation.</p>
+      <div class="hint">✦ <span>Chat with NEXORA using the chat button on this page.</span></div>
+    </div>
+    <div class="orb-wrap" aria-hidden="true"><div class="orb"></div></div>
+  </main>
+  <section>
+    <div class="info">
+      <h2>Ask anything. Explore what’s possible.</h2>
+      <p>Start with a question, explain what you’re working on, or ask NEXORA to help you think through an idea. Responses are AI-generated, so check important information before relying on it.</p>
+    </div>
+  </section>
+  <footer>© 2026 NEXORA AI. Founded and created by Joshua Aregbesola.</footer>
+</body>
+</html>

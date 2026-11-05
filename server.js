@@ -111,7 +111,7 @@ app.post("/api/chat", async (req, res) => {
 
 app.get("/api/health", (_req, res) => res.json({ ok: true, name: "NEXORA AI" }));
 
-app.get("*", (_req, res) => res.sendFile(path.join(__dirname, "public", "index.html")));
+app.get('/{*splat}', (_req, res) => res.sendFile(path.join(__dirname, "public", "index.html")));
 
 app.listen(port, () => {
   console.log(`NEXORA AI is running at http://localhost:${port}`);
